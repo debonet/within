@@ -1,0 +1,32 @@
+{
+  "name": "@debonet/within",
+  "version": "1.0.0",
+  "description": "Simple library to add timeouts to ES6 Promieses",
+  "main": "src/within.js",
+  "scripts": {
+    "test": "jest test/*test*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/debonet/within.git"
+  },
+  "keywords": [
+    "Simple",
+    "library",
+    "to",
+    "add",
+    "timeouts",
+    "to",
+    "ES6",
+    "Promieses"
+  ],
+  "author": "Jeremy De Bonet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/debonet/within/issues"
+  },
+  "homepage": "https://github.com/debonet/within#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
