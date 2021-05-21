@@ -56,15 +56,14 @@ Create a version of a function that will timeout if it exceeds the specified dur
 
 ```javascript
 
-const waitUpTo1Second = within.limit( 1000, wait );
+	const waitUpTo1Second = within.limit( 1000, wait );
 
-try {
-	waitUpTo1Second( 2000 );
-}
-catch {
-	// will get here after 1000 ms
-}
-
+	try {
+		waitUpTo1Second( 2000 );
+	}
+	catch {
+		// will get here after 1000 ms
+	}
 ```
 
 
@@ -86,3 +85,20 @@ arguments which will be passed to `func`. This allows one to save the sytax over
 ### Returns
 
 a Promise that resolves with the result of `func(...arguments)` or Promise.reject(Within.TimeoutError) in the event that that the call to `func`does not complete within the indicaed `maxTime`.
+
+
+
+## within.limit( maxTime, func )
+
+### Parameters
+
+`maxTime`
+the maximum duration (in microseconds) to wait before rejecting the promise with a within.TimeoutError.
+
+`func`
+a function that will be timelimited
+
+### Returns
+
+a function that returns a promise Promise that resolves with the result of `func(...arguments)` or Promise.reject(Within.TimeoutError) in the event that that the call to `func` does not complete within the indicaed `maxTime`.
+
