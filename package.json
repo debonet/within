@@ -1,6 +1,6 @@
 {
   "name": "@debonet/within",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple library to add timeouts to ES6 Promieses",
   "main": "src/within.js",
   "scripts": {
